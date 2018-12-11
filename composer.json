@@ -46,13 +46,13 @@
   },
   "scripts": {
     "test": [
-      "phpcs public --no-cache --basepath=public/ --report=summary"
+      "phpcs public --no-cache --basepath=public/ --report=summary --no-colors"
     ],
     "verbose": [
       "phpcs public/my-custom-file.php --no-cache --basepath=public/ --report=summary -vv"
     ],
     "basic": [
-      "phpcs . --no-cache --basepath=public/ --report=summary --standard=basic.xml"
+      "phpcs . --no-cache --basepath=public/ --report=summary --standard=basic.xml --no-colors"
     ]
   }
 }
