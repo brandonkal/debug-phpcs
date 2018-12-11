@@ -1,0 +1,58 @@
+{
+  "name": "debug-phpcs",
+  "description": "Debug broken include-pattern in phpcs",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Brandon Kalinowski",
+      "role": ""
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "composer/installers": "^1.2",
+    "drupal-composer/preserve-paths": "0.1.*"
+  },
+  "extra": {
+    "installer-paths": {
+      "public/app/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ]
+    },
+    "preserve-paths": [
+      "public/my-custom-file.php",
+      "public/app/themes",
+      "public/app/plugins"
+    ],
+    "wordpress-install-dir": "public"
+  },
+  "require-dev": {
+    "brandonkal/phpcs-neutron-refined": "^1.9.4",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4",
+    "sebastian/phpcpd": "^4.1",
+    "squizlabs/php_codesniffer": "^3.3",
+    "wpackagist-plugin/check-email": "^0.5.5",
+    "wpackagist-plugin/wordpress-importer": "^0.6.4"
+  },
+  "scripts": {
+    "test": [
+      "phpcs public --no-cache --basepath=public/ --report=summary"
+    ],
+    "verbose": [
+      "phpcs public --no-cache --basepath=public/ --report=summary -vv"
+    ],
+    "basic": [
+      "phpcs . --no-cache --basepath=public/ --report=summary --standard=basic.xml"
+    ]
+  }
+}

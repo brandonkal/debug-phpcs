@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ruleset name="A test ruleset">
+	<description>A test ruleset</description>
+	<rule ref="NeutronRefined"/>
+	<arg name="colors" />
+	<arg name="parallel" value="75" />
+	<arg value="p"/>
+	<rule ref="VariableAnalysis.CodeAnalysis.VariableAnalysis">
+    	<properties>
+        	<property name="validUndefinedVariableNames" value="post"/>
+    	</properties>
+	</rule>
+
+	<include-pattern>public/app/my-plugin</include-pattern>
+	<include-pattern>public/app/themes/my-theme</include-pattern>
+	<include-pattern>public/my-custom-file.php</include-pattern>
+</ruleset>

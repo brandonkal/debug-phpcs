@@ -1,0 +1,23 @@
+# Ignore Wordpress installation folder (public) but not public/app
+/public/*
+!/public/app/
+!/public/my-custom-file.php
+
+/public/app/*/
+
+# Themes folder must exist to keep custom themes
+!/public/app/themes/
+/public/app/themes/*
+
+!/public/app/plugins/
+/public/app/plugins/*/
+
+## List all custom themes and plugins here
+!/public/app/themes/my-theme/
+!/public/app/plugins/my-plugin/
+
+## Composer ##
+composer.phar
+vendor/*
+# include in demo repo.
+!/app/plugins/my-plugin/vendor/*
