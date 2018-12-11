@@ -49,7 +49,7 @@
       "phpcs public --no-cache --basepath=public/ --report=summary"
     ],
     "verbose": [
-      "phpcs public --no-cache --basepath=public/ --report=summary -vv"
+      "phpcs public/my-custom-file.php --no-cache --basepath=public/ --report=summary -vv"
     ],
     "basic": [
       "phpcs . --no-cache --basepath=public/ --report=summary --standard=basic.xml"
