@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe8cd1db091654e0c50df6e88c4e6d37",
+    "content-hash": "d496f63d038865bff4a53bb77468cf30",
     "packages": [
         {
             "name": "composer/installers",
@@ -179,46 +179,6 @@
                 "nested package"
             ],
             "time": "2017-02-03T11:32:31+00:00"
-        },
-        {
-            "name": "wpackagist-plugin/jetpack",
-            "version": "6.8.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/6.8.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.6.8.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/jetpack/"
-        },
-        {
-            "name": "wpackagist-plugin/redis-cache",
-            "version": "1.4.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/redis-cache/",
-                "reference": "tags/1.4.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redis-cache.1.4.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/redis-cache/"
         }
     ],
     "packages-dev": [
